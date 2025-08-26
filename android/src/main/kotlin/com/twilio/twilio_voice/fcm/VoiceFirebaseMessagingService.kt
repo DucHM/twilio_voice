@@ -87,7 +87,6 @@ class VoiceFirebaseMessagingService : FirebaseMessagingService(), MessageListene
             startForeground(
                 1001,
                 notification,
-                ServiceInfo.FOREGROUND_SERVICE_TYPE_MICROPHONE or
                 ServiceInfo.FOREGROUND_SERVICE_TYPE_PHONE_CALL
             )
         } else {
